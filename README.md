@@ -8,3 +8,5 @@ Windows info grabbing
 Made the webhook message look better
 
 Made it look like a corupted file
+
+Made it close discord for things in the future
