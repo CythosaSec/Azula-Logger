@@ -10,3 +10,10 @@ Made the webhook message look better
 Made it look like a corupted file
 
 Made it close discord for things in the future
+
+
+# Legality
+
+Me and dxmon dont take any warranty for what you do with this tool
+
+Dont use it for Malicius Purposes!
