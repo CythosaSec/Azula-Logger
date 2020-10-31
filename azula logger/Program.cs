@@ -17,13 +17,23 @@ using System.Runtime.CompilerServices;
 
 namespace azula_logger
 {
-    //azula logger made by dxmon#0666
-    //https://azula.xyz
-    //https://cythosa.xyz
+    /*  
+     *    | Azula Logger by dxmon#0666 (github.com/cythosa) and Chefkoch (github.com/Chefkoch69)
+     *   
+     *    | https://github.com/CythosaSec/Azula-Logger
+     * 
+     *    | We do not Take any Warranty for this Programm / what you do with this Programm
+     *  
+     * 
+     *    | https://azula.xyz
+     *    | https://cythosa.xyz
+     */
 
-    //added win info
     class Program
     {
+        
+
+
         static void Main(string[] args)
         {
             //making webhook url & image a string so u dont have to change it everywhere
