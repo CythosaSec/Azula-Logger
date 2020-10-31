@@ -11,6 +11,8 @@ Made it look like a corupted file
 
 Made it close discord for things in the future
 
+Chefkoch (me) and dxmon would be very happy if you fork this Repo and make the code better
+
 # Usage
 
 You download the source code and modify it with your webhook, picture and message
