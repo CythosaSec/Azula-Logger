@@ -13,7 +13,11 @@ Made it close discord for things in the future
 
 # Usage
 
-You download the source code and modify it with your webhook/...
+You download the source code and modify it with your webhook, picture and message
+
+webhook and picture: Program.cs
+
+message: Spreader.cs
 
 You Build the Source 
 
