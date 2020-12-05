@@ -31,4 +31,4 @@ Me and dxmon dont take any warranty for what you do with this tool
 
 Dont use it for Malicius Purposes!
 
-This is just an example to show that discord ins't as secure as you think
+This is just an example to show that discord isn't as secure as you think
